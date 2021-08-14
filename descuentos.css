@@ -104,8 +104,6 @@ body{
     padding-top: 6px;
 }
 
-
-
 .input{
     background-color: inherit;
     margin: 0px 10px;
@@ -114,7 +112,7 @@ body{
     color: white;
     border: none;
     border-bottom: 1px solid white;
-    width: 50px;
+    width: 100px;
     outline: none;
     text-align: center;
 }
@@ -130,9 +128,6 @@ input[type=number] {
     color: white;
     text-align: center;
 }
-
-
-
 
 .footer{
     background-color: #DCD6F7;
