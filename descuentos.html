@@ -4,12 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Porcentajes y Descuentos - Platzi Javascript Practico</title>
+    <title>Porcentajes y Descuentos | Curso práctico de JavaScript en Platzi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gayathri:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./descuentos.css">
 </head>
 <body>
-    <h1>
-        Porcentajes y descuentos
-    </h1>
+    <header class="header">
+        <h1>Porcentajes y descuentos</h1>
+        <p>Este es el segundo taller del Curso Práctico de Javascript</p>
+    </header>
+    <main class="main">
+        <section class="main__section">
+            <form class="form" action="">
+                <h2>Calcula el precio a pagar de tus productos con descuento</h2>
+                <img src="https://img.icons8.com/dotty/80/ffffff/discount.png"/>
+                <label for="InputPrice">Escribe el precio de tu producto:</label>
+                <input class="input" id="InputPrice" type="number" onkeyup="onKeyUpDiscount()">
+                <label for="InputDiscount">Escribe el descuento de tu producto:</label>
+                <input class="input" id="InputDiscount" type="number" onkeyup="onKeyUpDiscount()">
+                <div class="form--result">
+                    <label for="ResultPrice">El precio con el descuento es: </label>
+                    <p id="ResultPrice"></p>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <a href="./descuentos.html">Términos de uso</a>
+        <a href="./descuentos.html">Declaración de privacidad</a>
+        <a href="./descuentos.html">Centro de ayuda</a>
+    </footer>
     <script src="./descuentos.js"></script>
 </body>
 </html>
