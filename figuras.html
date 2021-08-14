@@ -5,9 +5,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Figuras geométricas | Curso práctico de JavaScript en Platzi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gayathri:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./figuras.css">
 </head>
 <body>
-    <h1>Figuras geométricas</h1>
+    <header class="header">
+        <h1>Figuras Geométricas</h1>
+        <p>Este es el primer taller del curso práctico de JavaScript</p>
+    </header>
+    <main class="main">
+        <section class="main__section main__section--cuadrado">
+            <form class="form" action="">
+                <img src="https://img.icons8.com/dotty/80/ffffff/square.png"/>
+                <h2>Cuadrado</h2>
+                <h3>¿Cuánto mide el lado del cuadrado?</h3>
+                <div class="form__inputs">
+                    <input class="input" id="InputCuadrado" type="number" placeholder="Lado"/>
+                </div>
+                <div class="main__section--buttons">
+                    <button type="button" onclick="calcularPerimetroCuadrado()">Calcular el perímetro</button>
+                    <button type="button" onclick="calcularAreaCuadrado()">Calcular el área</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="main__section main__section--triangulo">
+            <form class="form" action="">
+                <img src="https://img.icons8.com/dotty/80/ffffff/triangle-stroked.png"/>
+                <h2>Triángulo</h2>
+                <h3>¿Cuánto miden los lados del triángulo?</h3>
+                <div class="form__inputs">
+                    <input class="input" id="Input1Triangulo" type="number" placeholder="Lado 1"/>
+                    <input class="input" id="Input2Triangulo" type="number" placeholder="Lado 2"/>
+                    <input class="input" id="Input3Triangulo" type="number" placeholder="Lado 3"/>
+                </div>
+                <div class="main__section--buttons">
+                    <button type="button" onclick="calcularPerimetroTriángulo()">Calcular el perímetro</button>
+                    <button type="button" onclick="calcularAreaTriángulo()">Calcular el área</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="main__section main__section--circulo">
+            <form class="form" action="">
+                <img src="https://img.icons8.com/dotty/80/ffffff/circled.png"/>
+                <h2>Círculo</h2>
+                <h3>¿Cuánto mide el radio del círculo?</h3>
+                <div class="form__inputs">
+                    <input class="input" id="InputRadio" type="number" placeholder="Radio"/>
+                </div>
+                <div class="main__section--buttons">
+                    <button type="button" onclick="calcularPerimetroCirculo()">Calcular el perímetro</button>
+                    <button type="button" onclick="calcularAreaCirculo()">Calcular el área</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <a href="./figuras.html">Términos de uso</a>
+        <a href="./figuras.html">Declaración de privacidad</a>
+        <a href="./figuras.html">Centro de ayuda</a>
+    </footer>
     <script src="./figuras.js"></script>
 </body>
 </html>

@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gayathri', sans-serif;
+    background-color: #F4EEFF;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header{
+    background-color: #DCD6F7;
+    padding: 0px 30px;
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: center;
+}
+.header h1{
+    background-color: #DCD6F7;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.header p{
+    background-color: #DCD6F7;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.main{
+    color: white;
+    padding: 20px 50px 30px 50px;
+    margin-bottom: 20px;
+    display: flex;
+    align-content: space-around;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.main__section{
+    background-color: #424874;
+    height: 350px;
+    width: 350px;
+    margin: 30px 20px;
+    padding: 30px 0px;
+    border: 2px solid rgba(60, 66, 112);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-start;
+}
+
+.main__section h2{
+    background-color: inherit;
+    text-align: center;
+}
+
+.form{
+    background-color: inherit;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form__inputs, .form h3, .form img{
+    background-color: inherit;
+}
+
+.input{
+    background-color: inherit;
+    margin: 0px 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid white;
+    width: 50px;
+    outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+}
+::placeholder{
+    color: white;
+    text-align: center;
+}
+
+.main__section--buttons{
+    background-color: inherit;
+    color: inherit;
+    text-align: center;
+}
+
+.main__section--buttons button{
+    color: inherit;
+    margin: 0px 5px;
+    width: 80px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.03);
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding-top: 3px;
+}
+
+.main__section--buttons button:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.footer{
+    background-color: #DCD6F7;
+    display: flex;
+    align-items: center;
+}
+.footer a {
+    background-color: inherit;
+    color: black;
+    cursor: pinter;
+    height: 6rem;
+    margin-top: auto;
+    text-decoration: none;
+    padding-top: 20px;
+    margin-left: 30px;
+}
+.footer a:hover{
+    text-decoration: underline;
+}
