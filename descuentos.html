@@ -20,10 +20,29 @@
             <form class="form" action="">
                 <h2>Calcula el precio a pagar de tus productos con descuento</h2>
                 <img src="https://img.icons8.com/dotty/80/ffffff/discount.png"/>
+                
                 <label for="InputPrice">Escribe el precio de tu producto:</label>
-                <input class="input" id="InputPrice" type="number" onkeyup="onKeyUpDiscount()">
-                <label for="InputDiscount">Escribe el descuento de tu producto:</label>
-                <input class="input" id="InputDiscount" type="number" onkeyup="onKeyUpDiscount()">
+                <input class="input" id="InputPrice" type="number">
+                
+                <div class="OfferTypeContainer">
+                    <label for="SelectDescuento">Escoge el tipo de descuento: </label>
+                    <select name="SelectDescuento" id="SelectDescuento" onchange="onChangeDescuento()">
+                        <option value="cupon">Cupón</option>
+                        <option value="descuento">Descuento</option>
+                    </select>
+                </div>
+                
+                <div id="CuponContainer" class="form--descuento">
+                    <label for="InputCupon" id="LabelCupon">Escribe el cupón de descuento:</label>
+                    <input class="input" id="InputCupon" type="text">
+                    <button type="button" id="ButtonApplyCoupon" onclick="onClicApplyCoupon()">Aplicar cupón</button>
+                </div>
+                
+                <div id="DiscountContainer" class="form--descuento">
+                    <label for="InputDiscount" id="LabelDiscount">Escribe el descuento de tu producto:</label>
+                    <input class="input" id="InputDiscount" type="number" onkeyup="onKeyUpDiscount()">
+                </div>
+                
                 <div class="form--result">
                     <label for="ResultPrice">El precio con el descuento es: </label>
                     <p id="ResultPrice"></p>

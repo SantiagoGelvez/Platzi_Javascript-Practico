@@ -76,16 +76,44 @@ body{
 
 .form img{
     background-color: inherit;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin: 10px;
 }
 
+.OfferTypeContainer {
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.OfferTypeContainer select, .form--descuento button{
+    background: #DCD6F7;
+    padding-top: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+.form input:nth-child(1){
+    font-size: 5px;
+}
+
+.form--descuento{
+    text-align: center;
+    height: 40px;
+}
 
 .form--result{
     display: flex;
     align-items: center;
     justify-content: space-around;
     height: 30px;
+    margin-top: 20px;
 }
 
 .form--result label{
@@ -107,8 +135,6 @@ body{
 .input{
     background-color: inherit;
     margin: 0px 10px;
-    margin-top: 10px;
-    margin-bottom: 30px;
     color: white;
     border: none;
     border-bottom: 1px solid white;
