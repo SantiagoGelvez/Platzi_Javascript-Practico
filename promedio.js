@@ -4,7 +4,7 @@ function calcularMediaAritmetica(lista){
     //     sumaLista1 = sumaLista1 + lista[i];
     // }
     const sumaLista = lista.reduce(
-        function(valorAcumulado = 0, nuevoElemento){
+        function(valorAcumulado , nuevoElemento){
             return valorAcumulado + nuevoElemento
         }
     );
