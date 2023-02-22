@@ -4,38 +4,38 @@
     box-sizing: border-box;
     font-family: 'Gayathri', sans-serif;
 }
+
 body{
-    background-color: #F4EEFF;
     display: flex;
     flex-direction: column;
     height: 100vh;
+    background-color: #F4EEFF;
 }
 
 .header{
     background-color: #DCD6F7;
-    padding: 0px 30px;
-    height: 5rem;
+    padding: 0px;
+    height: 8rem;
     display: flex;
     flex-direction: column;
     align-content: space-around;
     justify-content: center;
 }
 .header h1{
-    background-color: inherit;
-    margin-top: 10px;
+    background-color: #DCD6F7;
+    margin-top: 1rem;
     text-align: center;
 }
 
 .header p{
-    background-color: inherit;
-    margin-bottom: 10px;
-    width: 100%;
+    background-color: #DCD6F7;
+    margin-left: 2em;
 }
 
 .main{
     color: white;
-    padding: 20px 50px 30px 50px;
-    margin-bottom: 20px;
+    height: 100%;
+    margin: auto 0;
     display: flex;
     align-content: space-around;
     justify-content: center;
@@ -44,10 +44,10 @@ body{
 
 .main__section{
     background-color: #424874;
-    height: 390px;
+    height: 350px;
     width: 350px;
-    margin: 10px 20px;
-    padding: 10px 10px;
+    margin: 30px 50px;
+    padding: 30px 0px;
     border: 2px solid rgba(60, 66, 112);
     border-radius: 10px;
     display: flex;
@@ -70,42 +70,8 @@ body{
     align-items: center;
 }
 
-.form__inputs, .form label{
+.form__inputs, .form h3, .form img, .form label{
     background-color: inherit;
-}
-
-.form img{
-    background-color: inherit;
-    margin: 10px;
-}
-
-.OfferTypeContainer {
-    height: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 85%;
-    margin-bottom: 10px;
-    font-size: 14px;
-}
-
-.OfferTypeContainer select, .form--descuento button{
-    background: #DCD6F7;
-    padding-top: 2px;
-    padding-left: 5px;
-    padding-right: 5px;
-    text-align: center;
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    border-radius: 5px;
-}
-
-.form input:nth-child(1){
-    font-size: 5px;
-}
-
-.form--descuento{
-    text-align: center;
-    height: 40px;
 }
 
 .form--result{
@@ -117,28 +83,30 @@ body{
 }
 
 .form--result label{
-    width: 130px;
+    margin-top: 0.5em;
+    width: 3.5em;
+    font-weight: bold;
 }
 
 .form--result p{
     background-color: rgba(0, 0, 0, 0.1);
-    font-size: 20px;
     border: 1px solid rgba(0, 0, 0, 0.3);
     border-radius: 3px;
-    margin: 10px;
     width: 130px;
     text-align: center;
+    padding-top: 0.5em;
     height: 100%;
-    padding-top: 6px;
 }
 
 .input{
     background-color: inherit;
     margin: 0px 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
     color: white;
     border: none;
     border-bottom: 1px solid white;
-    width: 100px;
+    width: 50px;
     outline: none;
     text-align: center;
 }
@@ -151,8 +119,30 @@ input[type=number] {
     -moz-appearance: textfield;
 }
 ::placeholder{
-    color: white;
+    color: rgba(255, 255, 255, 0.4);
     text-align: center;
+}
+
+.main__section--buttons{
+    background-color: inherit;
+    color: inherit;
+    text-align: center;
+}
+
+.main__section--buttons button{
+    color: inherit;
+    margin: 0px 5px;
+    width: 80px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.03);
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding-top: 3px;
+}
+
+.main__section--buttons button:hover{
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 .footer{
@@ -164,12 +154,12 @@ input[type=number] {
 .footer a {
     background-color: inherit;
     color: black;
-    cursor: pinter;
-    height: 6rem;
+    cursor: pointer;
+    height: 5rem;
     margin-top: auto;
     text-decoration: none;
-    padding-top: 20px;
-    margin-left: 30px;
+    padding-top: 2em;
+    margin-left: 1em;
 }
 .footer a:hover{
     text-decoration: underline;

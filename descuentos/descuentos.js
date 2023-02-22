@@ -51,8 +51,11 @@ function onClicApplyCoupon() {
         return;
     }
     const inputPrice = document.getElementById("InputPrice");
+    
     const priceValue = inputPrice.value;
+    
     precioConDescuento = calcularPrecioConDescuento(priceValue, cuponesValidos[cuponValue]);
+    
     resultPrice.innerText = "$" + new Intl.NumberFormat('es-CO').format(precioConDescuento);
 }
 

@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gayathri', sans-serif;
+    background-color: #F4EEFF;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header{
+    background-color: #DCD6F7;
+    padding: 0px;
+    height: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: center;
+}
+.header h1{
+    background-color: #DCD6F7;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.main {
+    height: 100%;
+    margin: 2em;
+}
+
+.main__nav--options{
+    display: grid;
+    height: 100%;
+    align-content: stretch;
+    grid-template-columns: 1fr 1fr;
+    list-style: none;
+    gap: 2em;
+}
+
+.main__nav--options li{
+    height: 100%;
+    margin: auto 0;
+}
+
+.main__nav--options li a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 0.5em 0.5em 1.5em rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+}
+
+.main__nav--options li a:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0.5em 0.5em 1.5em rgba(0, 0, 0, 0.3);
+}
+
+.main__nav--options li a span {
+    text-align: center;
+    font-size: 1.4em;
+    background: none;
+}
+
+
+.footer{
+    background-color: #DCD6F7;
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+}
+.footer a {
+    background-color: inherit;
+    color: black;
+    cursor: pointer;
+    height: 5rem;
+    margin-top: auto;
+    text-decoration: none;
+    padding-top: 2em;
+    margin-left: 1em;
+}
+.footer a:hover{
+    text-decoration: underline;
+}

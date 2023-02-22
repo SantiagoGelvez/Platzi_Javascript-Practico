@@ -19,14 +19,23 @@
         <section class="main__section main__section--cuadrado">
             <form class="form" action="">
                 <img src="https://img.icons8.com/dotty/80/ffffff/square.png"/>
+                
                 <h2>Cuadrado</h2>
+                
                 <h3>¿Cuánto mide el lado del cuadrado?</h3>
+                
                 <div class="form__inputs">
                     <input class="input" id="InputCuadrado" type="number" placeholder="Lado"/>
                 </div>
+                
                 <div class="main__section--buttons">
                     <button type="button" onclick="calcularPerimetroCuadrado()">Calcular el perímetro</button>
                     <button type="button" onclick="calcularAreaCuadrado()">Calcular el área</button>
+                </div>
+
+                <div class="form--result">
+                    <label for="ResultSquare">Result: </label>
+                    <p id="ResultSquare"></p>
                 </div>
             </form>
         </section>
@@ -34,16 +43,25 @@
         <section class="main__section main__section--triangulo">
             <form class="form" action="">
                 <img src="https://img.icons8.com/dotty/80/ffffff/triangle-stroked.png"/>
+                
                 <h2>Triángulo</h2>
+                
                 <h3>¿Cuánto miden los lados del triángulo?</h3>
+                
                 <div class="form__inputs">
                     <input class="input" id="Input1Triangulo" type="number" placeholder="Lado 1"/>
                     <input class="input" id="Input2Triangulo" type="number" placeholder="Lado 2"/>
                     <input class="input" id="Input3Triangulo" type="number" placeholder="Lado 3"/>
                 </div>
+                
                 <div class="main__section--buttons">
                     <button type="button" onclick="calcularPerimetroTriangulo()">Calcular el perímetro</button>
                     <button type="button" onclick="calcularAreaTriangulo()">Calcular el área</button>
+                </div>
+
+                <div class="form--result">
+                    <label for="ResultTriangle">Result: </label>
+                    <p id="ResultTriangle"></p>
                 </div>
             </form>
         </section>
@@ -51,14 +69,23 @@
         <section class="main__section main__section--circulo">
             <form class="form" action="">
                 <img src="https://img.icons8.com/dotty/80/ffffff/circled.png"/>
+                
                 <h2>Círculo</h2>
+                
                 <h3>¿Cuánto mide el radio del círculo?</h3>
+                
                 <div class="form__inputs">
                     <input class="input" id="InputRadio" type="number" placeholder="Radio"/>
                 </div>
+                
                 <div class="main__section--buttons">
                     <button type="button" onclick="calcularPerimetroCirculo()">Calcular el perímetro</button>
                     <button type="button" onclick="calcularAreaCirculo()">Calcular el área</button>
+                </div>
+
+                <div class="form--result">
+                    <label for="ResultCircle">Result: </label>
+                    <p id="ResultCircle"></p>
                 </div>
             </form>
         </section>
